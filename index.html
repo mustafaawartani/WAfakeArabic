@@ -312,13 +312,8 @@ const initialState = {
   platform:'whatsapp',
   device:'ios',
   dark:false,
-  contact:{ name:'Sara', username:'sara_92', avatar:defaultAvatar, online:true, verified:false, lastSeen:'online', statusTime:'9:41' },
-  messages:[
-    {id:uid(), type:'text', side:'in', text:'Hey! Are you free tonight? 🌙', time:'10:21', status:'read'},
-    {id:uid(), type:'text', side:'out', text:'Yes! Where do you want to go?', time:'10:22', status:'read'},
-    {id:uid(), type:'text', side:'in', text:'مرحبا، كيف حالك؟', time:'10:23', status:'read'},
-    {id:uid(), type:'text', side:'out', text:'بخير الحمد لله 🌹', time:'10:24', status:'delivered'}
-  ]
+  contact:{ name:'Name', username:'Username', avatar:defaultAvatar, online:true, verified:false, lastSeen:'online', statusTime:'9:41' },
+  messages:[]
 };
 let state = load() || structuredClone(initialState);
 let history = [structuredClone(state)];
